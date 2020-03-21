@@ -1,4 +1,117 @@
+/* Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'EuclidSquare';
+    font-weight: 100;
+    src: url('../fonts/EuclidSquare-Light-Web/EuclidSquare-Light-WebS.eot?') format('eot'), url('../fonts/EuclidSquare-Light-Web/EuclidSquare-Light-WebS.woff') format('woff'), url('../fonts/EuclidSquare-Light-Web/EuclidSquare-Light-WebS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EuclidSquare';
+    font-weight: 300;
+    src: url('../fonts/EuclidSquare-Regular-Web/EuclidSquare-Regular-WebS.eot?') format('eot'), url('../fonts/EuclidSquare-Regular-Web/EuclidSquare-Regular-WebS.woff') format('woff'), url('../fonts/EuclidSquare-Regular-Web/EuclidSquare-Regular-WebS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EuclidSquare';
+    font-weight: 500;
+    src: url('../fonts/EuclidSquare-Medium-Web/EuclidSquare-Medium-WebS.eot?') format('eot'), url('../fonts/EuclidSquare-Medium-Web/EuclidSquare-Medium-WebS.woff') format('woff'), url('../fonts/EuclidSquare-Medium-Web/EuclidSquare-Medium-WebS.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EuclidSquare';
+    font-weight: 700;
+    src: url('../fonts/EuclidSquare-Semibold-Web/EuclidSquare-Semibold-WebS.eot?') format('eot'), url('../fonts/EuclidSquare-Semibold-Web/EuclidSquare-Semibold-WebS.woff') format('woff'), url('../fonts/EuclidSquare-Semibold-Web/EuclidSquare-Semibold-WebS.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'EuclidSquare';
+    font-weight: 900;
+    src: url('../fonts/EuclidSquare-Bold-Web/EuclidSquare-Bold-WebS.eot?') format('eot'), url('../fonts/EuclidSquare-Bold-Web/EuclidSquare-Bold-WebS.woff') format('woff'), url('../fonts/EuclidSquare-Bold-Web/EuclidSquare-Bold-WebS.ttf') format('truetype');
+}
+
+
 body {
-    display: flex; 
-    align-items: center;;
+    color: #717171;
+    font-family: "EuclidSquare";
+    background: #22D853;
+}
+
+.container,
+a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 32px;
+    color: white;
+}
+
+.container>* {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+h5 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 500;
+}
+
+img {
+    width: 32px;
+}
+
+.section-header {
+    height: 60px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-banner {
+    height: 240px;
+}
+
+.section-social {
+    flex-direction: column;
+}
+
+.section-social div {
+    margin: 20px 0;
+}
+
+.section-social p {
+    font-weight: 300;
+}
+
+.section-footer {
+    height: 60px;
+    align-items: flex-end;
 }
