@@ -51,6 +51,7 @@ a {
     height: 100vh;
     padding: 32px;
     color: white;
+    justify-content: space-between;
 }
 
 .container>* {
@@ -105,10 +106,12 @@ img {
 
 .section-social div {
     margin: 20px 0;
+    width: 270px; 
 }
 
 .section-social p {
     font-weight: 300;
+    margin-top: 8px;
 }
 
 .section-footer {
