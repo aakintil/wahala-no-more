@@ -38,7 +38,11 @@
     }
 
     .container {
-        padding: 32px 84px;
+        padding: 32px 84px !important;
+    }
+
+    .section-banner {
+        width: 70%;
     }
 
     img {
