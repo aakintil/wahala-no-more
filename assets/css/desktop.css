@@ -11,12 +11,12 @@
     }
 
     img {
-        width: 48px; 
+        width: 48px;
     }
 
     .section-social p {
-        font-weight: 400; 
-        font-size: 24px;   
+        font-weight: 400;
+        font-size: 24px;
     }
 
     .section-social div {
@@ -31,9 +31,14 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    .section {
+        width: 90%;
+    }
+
     h1 {
-        font-size: 88px;
-        line-height: 106px;
+        font-size: 48px;
+        line-height: 86px;
         font-weight: 700;
     }
 
@@ -46,12 +51,12 @@
     }
 
     img {
-        width: 48px; 
+        width: 48px;
     }
 
     .section-social p {
-        font-weight: 400; 
-        font-size: 24px;   
+        font-weight: 400;
+        font-size: 24px;
     }
 
     .section-social div {
@@ -63,4 +68,17 @@
         padding: 100px 380px;
     }
 
+}
+
+@media (min-width: 1400px) {
+
+    .section {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 68px;
+        line-height: 86px;
+        font-weight: 700;
+    }
 }
