@@ -30,7 +30,7 @@
        2. redesign all the css so that the entire element component is clickable, as opposed to just the a/link element
     ...try wrapping the elements in <a> tags -->
     <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function () {
             FB.init({
@@ -47,8 +47,39 @@
             js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-    </script>
-
+    </script> -->
+    <script>
+        var div = document.createElement('div');
+        div.className = 'fb-customerchat';
+        div.setAttribute('page_id', '100425448269319');
+        div.setAttribute('ref', 'b64:d2FoYWxhLW5vLW1vcmUtYm90');
+        document.body.appendChild(div);
+        window.fbMessengerPlugins = window.fbMessengerPlugins || {
+          init: function () {
+            FB.init({
+              appId            : '1678638095724206',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v3.3'
+            });
+          }, callable: []
+        };
+        window.fbAsyncInit = window.fbAsyncInit || function () {
+          window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+          window.fbMessengerPlugins.init();
+        };
+        setTimeout(function () {
+          (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        }, 0);
+      </script>
+      
     <!-- Your customer chat code -->
     <div class="fb-customerchat" attribution=setup_tool page_id="100425448269319">
     </div>
